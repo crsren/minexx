@@ -67,7 +67,7 @@ a:hover {
 }
 ul#brand li {
 	display:inline;
-	padding: 5px 4px;
+	padding: 4px 4px;
   }
 
 .header-image{
@@ -775,4 +775,17 @@ ul,ol {
 		background:#fff;
 		color: var(--primary_col);
 	}
+}
+
+.gif_list {
+	display: inline-flex;
+  	justify-content: center;
+	flex-direction: row;
+  	flex-wrap: wrap;
+}
+
+.gif_item {
+	max-width: 200px;
+	max-height: 200px;
+	padding: 5px 5px 5px 5px;
 }
