@@ -103,7 +103,7 @@ header .navbar-white {
 	box-shadow:0px 3px 2px 0px rgba(50,50,50,0.1);
 }
 .item.header {
-	background-image:url(../images/homeimg.jpg);
+	background-image:url(../images/homeimg-bw.png);
 	background-repeat:no-repeat;
 	background-position:0% top;
 	background-size:cover;
@@ -143,7 +143,7 @@ header .navbar-white {
 }
 .subtext-image {
 	text-transform:none;
-	font-weight:100 !Important;
+	font-weight:80 !important;
 }
 .toparea {
 	background:#fff;
@@ -264,7 +264,7 @@ img {
 
 /* Image Box for images within paragraphs */
 .img-medium {
-	max-width: 20%;
+	max-width: 15%;
 	height: auto;
 	width:auto;
 }
@@ -460,6 +460,16 @@ img {
 	text-align:left;
 }
 
+.btn-attention {
+	border-radius: 15px;
+	color:#fff;
+	background:var(--primary_col);
+
+}
+.btn-attention:hover {
+	color:#fff;
+	background:var(--secondary-col) !important;
+}
 .btn-buynow {
 	font-size:25px;
 	padding:14px 25px;
@@ -469,15 +479,13 @@ img {
 	float:none;
 	line-height:1.7;
 	text-decoration:none;
-	color:#fff;
 	text-align:center;
 	font-weight:400;
 	border-bottom:5px solid rgba(0,0,0,0.1);
 	text-transform:uppercase;
-	border-radius:0;
 	display:block;
-	background:var(--primary_col);
 }
+
 .rightarea-price .edd-cart-ajax-alert {
 	display:inline;
 }
@@ -709,7 +717,7 @@ legend {
 	display:inline-block;
 }
 .footer {
-	background:#222;
+	background:var(--secondary-col);
 	color:#999;
 	font-size:14px;
 	padding:60px 0 40px 0;
