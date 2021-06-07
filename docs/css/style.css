@@ -213,7 +213,23 @@ a.homebrowseitems:hover {
 /*==============================================* SHOP *===============================================*/
 img {
 	max-width: 100%;
+	height: auto;
+	width:auto;
 }
+
+/* Image Box for images within paragraphs */
+.img-medium {
+	max-width: 20%;
+	height: auto;
+	width:auto;
+}
+.image-box {
+	/* max-height:300px; */
+	padding: 25px;
+	overflow:hidden;
+	/* display:inline-block; */
+}
+
 /*Product Box*/
 .maxproduct {
 	max-height:300px;
@@ -386,9 +402,27 @@ img {
 	display:inline;
 	margin-left:20px;
 }
+
+.center-flex { /* for invest page w/ centered content*/
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  width: auto;
+}
+
+.sub-list {
+	text-align:left;
+}
+
 .btn-buynow {
 	font-size:25px;
 	padding:14px 25px;
+	border:1px solid #e4e4e4;
+	margin-top:25px;
+	clear:both;
+	float:none;
+	line-height:1.7;
 	text-decoration:none;
 	color:#fff;
 	text-align:center;
@@ -602,8 +636,13 @@ legend {
 .callactiontitle {
 	font-size:25px;
 	font-weight:300;
-	color:#fff;
+	color:#fff !important;
 }
+
+.callactiontext {
+	color:#fff !important;
+}
+
 .callactionbutton {
 	border:1px solid;
 	padding:10px 20px;
