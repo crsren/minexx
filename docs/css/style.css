@@ -104,10 +104,9 @@ header .navbar-white {
 }
 .item.header {
 	background-image:url(../images/homeimg-bw.png);
-	background-size:cover;
-	background-position:center !important;
 	background-repeat:no-repeat;
 	background-position:0% top;
+	background-size:cover;
 	background-attachment:scroll;
 	background-color:rgba(0,0,0,0);
 }
@@ -134,20 +133,17 @@ header .navbar-white {
 	color:#fff;
 	z-index:2;
 	position:relative;
-	/* font-size:45px; */
+	font-size:45px;
 	line-height:90px;
 	text-transform:uppercase;
 	padding-top:100px;
 	padding-bottom:100px;
-	font-weight:600;
-	font-size: 10vw;
+	font-weight:700;
 	font-family:Roboto;
 }
-
 .subtext-image {
 	text-transform:none;
-	font-weight:80;
-	font-size: 10vw;
+	font-weight:80 !important;
 }
 .toparea {
 	background:#fff;
