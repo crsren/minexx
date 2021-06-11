@@ -1,0 +1,135 @@
+pragma solidity ^0.8.4;
+
+contract MNEXTok {
+    
+     struct wallet {
+        uint256 balance;
+        uint256 interestAccrued;
+        uint256 interestBalance;
+    }
+    
+    
+    mapping(address => wallet) public accounts;
+    
+    uint256 public dividendPerToken;
+
+    mapping(address => uint256) dividendBalanceOf;
+
+    mapping(address => uint256) dividendCreditedTo;
+        
+    address payable Minexx; 
+    uint8 public monthlyInterestRate;
+    uint256 public tokensAvailable;
+    uint256 totalTokenSupply;
+    
+    constructor() payable {//deployed with the Minexx address
+        Minexx = payable(msg.sender); //owner is the account that deploys the smart contract (so MINEXX)
+        totalTokenSupply = 0;
+    }
+    
+    event NewTokensMinted(
+        uint32 _amount
+    );
+    
+    event InterestTokensMinted(
+        uint32 _amount
+    );
+    
+    function mintNewTokens(uint32 valueMinted) public onlyMinexx {
+        //function for minting new tokens for new funding rounds
+
+        accounts[Minexx].balance += valueMinted;
+        tokensAvailable = accounts[Minexx].balance;
+        totalTokenSupply += valueMinted;
+        emit NewTokensMinted(valueMinted);
+    }
+    
+     
+    function buyToken() public payable { //payable keyord allows the function to accept ether - also used when defining or passing the wallet 
+        //(pretending that 1 Eth sent as pament = $1, in reality Eth wouldn't be sent)
+        //send the money to the Minexx account
+        
+        uint256 tokensToBuy = msg.value/(10**18);
+        
+        //if money sent is >0 and there is enough balance in the Minexx account:
+        require(tokensToBuy>0, "No capital has been sent to buy tokens with.");
+        require(accounts[Minexx].balance >= tokensToBuy, "There are not enough tokens available for purchase, please re-check the token count available and decrease your purchase amount");
+        Minexx.transfer(msg.value); 
+        
+        //send the security token from the Minexx account to the buyer's
+        accounts[msg.sender].balance += tokensToBuy;
+        accounts[Minexx].balance -= tokensToBuy;
+        tokensAvailable = accounts[Minexx].balance;
+    }
+        
+    function setInterestRate(uint8 _interestRate) public onlyMinexx{
+        //function for setting interest rate from Minexx platform
+        //currently gotten from parameter to function 
+        //in the future could grab straight from Minexx platform 
+        monthlyInterestRate = _interestRate;
+        
+    }
+    
+    function mintInterestTokens(uint32 valueMinted) internal {
+        //function for minting new tokens for interest payments - not sure if this is the best way to do it?
+        //would mint interest tokens and send them when users claim interest
+        //...
+        
+        emit InterestTokensMinted(valueMinted);
+    }
+    
+    
+    
+    function calculateInterestOwed() public{ 
+        //calculates interest owed based on account balance, interest rate an time it's been since purchase
+        
+        accounts[msg.sender].interestAccrued += accounts[msg.sender].balance * (monthlyInterestRate-1); //interest is in form 3% = 1.03, hence subtract 1
+    }
+    
+    function claimInterest() public{ 
+        //gets interest from interestAccrued into interestBalance
+        
+        require(accounts[msg.sender].interestBalance>0,"Your interest balance is 0, press calculateInterestAccrued to find out how much you have accrued.");
+        accounts[msg.sender].interestBalance += accounts[msg.sender].interestAccrued;
+        accounts[msg.sender].interestAccrued = 0;
+    }
+    
+     function transfer(address receiver, uint32 value) public onlyMinexx {
+        //function for minting new tokens for new funding rounds
+
+        accounts[receiver].balance += value;
+        accounts[msg.sender].balance -= value;
+        
+        
+        //calculation for how much interest accrued to send along with token, if not claimed yet:
+        //...
+        
+        //send interest owed
+        //...
+        
+        
+    }
+    
+    //MODIFIERS
+    
+    modifier onlyMinexx(){
+        require(msg.sender == Minexx, "Sender not authorized to mint tokens."); //msg is function metadata passed in  - sender is the address that called the function
+        _;
+    }
+    
+    
+    //TESTINGGGGGGGGGGGGGGGG 
+    address testown = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+    address testbuyer = 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2;
+    
+    function displayTestBalances() public view returns (uint256 balancestest1, uint256 balancestest2, uint256 interestaccrued, uint256 interestbalance){
+        balancestest1 = accounts[Minexx].balance;
+        balancestest2 = accounts[testbuyer].balance;
+        
+        interestaccrued = accounts[testbuyer].interestAccrued;
+        interestbalance = accounts[testbuyer].interestBalance;
+    }
+  
+ 
+ 
+}
