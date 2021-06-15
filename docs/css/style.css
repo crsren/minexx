@@ -70,6 +70,18 @@ ul#brand li {
 	padding: 4px 4px;
   }
 
+ul#double-space li {
+	line-height:2.3;
+	padding: 4px 4px;
+	/* display:inline; */
+	font-size:16px;
+}
+
+.nice {
+	color: var(--primary_col);
+	font-size: 150%;
+}
+
 .header-image{
 max-width:100%;
 max-height:100%;
@@ -450,10 +462,12 @@ img {
 
 .center-flex { /* for invest page w/ centered content*/
 	display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align:center;
-  width: auto;
+  	justify-content: center;
+  	align-items: center;
+  	text-align:center;
+  	width: auto;
+	line-height:1.8;
+	font-size:18px;
 }
 
 .sub-list {
