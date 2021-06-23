@@ -22,11 +22,11 @@ The content is structured as follows:
   + We have made a leaflet as well as an investor pitch for our project. Aside from that, this folder further contains logos and other commercial assets that will be useful in the future.
 + **Project Management**
   + PM Methodology
-  + Meeting records
+  + Meeting records, overview
   + Design & Development Report
 + **Impact Reports**
   + Sustainability report
-  + Report on ethical consequences 
+  + Report on ethical consequences
 + **Sources**
   + A place with all sources we found useful, organized according to 5 topics
     + Minexx
@@ -34,4 +34,3 @@ The content is structured as follows:
     + (Impact) Investment funds
     + Blockchain & Security Tokens
     + WebDev
-
