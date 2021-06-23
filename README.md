@@ -1,10 +1,8 @@
 # MNEX Security Token
-
-![]()
-
-**3rd Year Group Project** 
-
+**3rd Year Group Project**
 **Minexx 🇷🇼🇿🇦| Imperial College London 🇬🇧**
+
+<img src="Commercial/assets/Minexx-Logo-Original.png" width="326" height="192">
 
 ## Overview
 
