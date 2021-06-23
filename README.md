@@ -1,19 +1,37 @@
-# minexx test
-If you want to take a look/ test the smart contract, use Remix Solidity in-browser compiler
+# MNEX Security Token
 
-I used this tutorial to get me started: https://www.youtube.com/watch?v=ipwxYa-F1uY
-- don't feel like you have to, more just if you want to get an idea of how the smart contract works
+![]()
 
-If you do that and want to test it:
-- Deploy the contract with one account (with Javascript VM)
-- Only that account will be able to use the mintNewTokens() function
-- Then switch to another account (via the drop down account list at the top)
-- Then if you fill the 'value' field (just above deploy) with any non-zero number of Ether, then click the buyTokens function, the account will be credited with a balance of that many tokens
-- This can be checked by putting that account's address into the 'accounts' function
-- Interest rate (defualt is 0) can only be set by the same account that initially deployed the contract (hence Minexx)
+**3rd Year Group Project** 
 
+**Minexx 🇷🇼🇿🇦| Imperial College London 🇬🇧**
 
-NOTES
-- Currently there is no time restriction on the interest rate payments, I'll do that next
-- Also all numebrs are currently integers - Solidity natively only uses ints, need to import a library to get floating numbers - I'll do this as well
-- Also need to add functionality to the transfer function so it transfers any interest attatched to the tokens being transferred
+## Overview
+
+The MNEX security token and the [minexx.codes](minexx.codes) webpage are the outcome of a exciting collaboration between students from Imperial College London and Minexx, a startup working to revolutionize the Artisinal Mining Industry in Africa.
+
+This repository contains all materials, sources, specifications and rationales necessary to understand and take over the project. In addition, we have compiled the most relevant information into a **single report** to get you started.
+
+The content is structured as follows:
+
++ **Smart Contract**
+  + This folder contains a video explanation of our smart contract, its source code as well as instructions on how to use it.
++ **Webpage**
+  + This folder contains all content and source code for our webpage, [minexx.codes](minexx.codes). Pushing any changes to this folder will directly update the webpage.
++ **Commercial files**
+  + We have made a leaflet as well as an investor pitch for our project. Aside from that, this folder further contains logos and other commercial assets that will be useful in the future.
++ **Project Management**
+  + PM Methodology
+  + Meeting records
+  + Design & Development Report
++ **Impact Reports**
+  + Sustainability report
+  + Report on ethical consequences 
++ **Sources**
+  + A place with all sources we found useful, organized according to 5 topics
+    + Minexx
+    + ASM
+    + (Impact) Investment funds
+    + Blockchain & Security Tokens
+    + WebDev
+
