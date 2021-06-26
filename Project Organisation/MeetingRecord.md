@@ -33,7 +33,7 @@ https://www2.deloitte.com/content/dam/Deloitte/cn/Documents/audit/deloitte-cn-au
 ### Need to answer
 -	Why do people buy this token?
 -	Who is buying it? (Manufacturers, end-users,...)
--	How is it all integrated? (Miners on one side and investors on the other, transaction history
+-	How is it all integrated? (Miners on one side and investors on the other, transaction history)
 
 ### Next steps
 -	Look into web development
@@ -169,7 +169,8 @@ https://www.finboot.com/
 
 1.	New technologies increase the demand for minerals
 
-a.	MIT review: reliance of new technologies on different minerals
+a.	MIT review reliance of new technologies on different minerals:  
+		https://fingfx.thomsonreuters.com/gfx/ce/jznvnjeabvl/Tin 
 
 2.	Direct and sustainable impact
 
