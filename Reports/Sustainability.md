@@ -3,7 +3,7 @@ Sustainability report
 As a testament to our sustainability Minexx directly impacts 10 of the 17 Sustainable Development Goals set by the UN.
 
 The first being to end poverty. This goal is met through Minexx providing the miners with an opportunity for a fair wage, preventing them from being under paid for the minerals they collect. This allows the miners to live more sustainable lives e.g. not having to sacrifice their child’s education for food.
-![minexx](docs/images/goal1.png)
+<img src="images/goal1.png" width="326" height="192">
 
 A second goal being met is good health and well-being. This is being met by Minexx through their ATIF, as this will allow the miners to purchase safety equipment and reliable tools, it will also fund development of the mine sites providing amenities such as water and electricity. This brings sustainability as it will lead to much fewer miners getting injured or falling ill due to their work.
 
