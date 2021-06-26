@@ -6,3 +6,15 @@
 **Backing of crypto projects**
 + https://thenextweb.com/news/stablecoin-projects-gold-failed
 + → "To date, 24 stablecoin projects have closed down and ceased operations. Around two-thirds (16) of these now defunct stablecoins were backed by gold reserves."
+
+**Polymath website**
++ https://polymath.network/
+
+**5 best STO platforms**
++ https://www.nasdaq.com/articles/5-best-security-token-offering-platforms-2020-08-11 
+
+**Polymath Network Core Architecture Video Walkthrough**
++ https://www.youtube.com/watch?v=HJhT-u1lPzA
+
+**Finboot Tech website**
++ https://www.youtube.com/watch?v=HJhT-u1lPzA
