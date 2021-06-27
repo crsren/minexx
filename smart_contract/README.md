@@ -3,7 +3,7 @@
 In this folder you will find the following documents:
 
 + **Blockchain and Security Tokens**
-  + This document provides information regarding what blockchain is and its use cases, what a smart contract is and how to use it, security tokens, their benefits and general requirements that one must take into consideration when designing one.
+  + This document provides information regarding what blockchain is and its use cases, what a smart contract is and how to interact with it, security tokens, their benefits and general requirements that one must take into consideration when designing one.
 
 + **Token Technical Documentation**
   + Here you will find in depth documentation as to all the states, wallet variables, functions and permissions regarding the smart contract. Please read Design History in the Reports folder in order to gain understanding as to the reasoning for some specific design choices in this document.
