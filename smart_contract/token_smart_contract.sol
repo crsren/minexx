@@ -46,6 +46,11 @@ contract MNEXTok {
         uint32 _amount
     );
     
+      event InterestClaimed(
+        address _account,
+        uint32 _value
+    );
+    
     function addToWhitelist(address newAddress) public onlyMinexx{
         whitelistedInvestors[newAddress] = true;
     }
@@ -126,6 +131,17 @@ contract MNEXTok {
         accounts[msg.sender].interestBalance += accounts[msg.sender].interestAccrued;
         accounts[msg.sender].interestAccrued = 0;
         accounts[msg.sender].interestClaimable = false;
+        
+        accounts[msg.sender].buyTime = block.timestamp; //resets interest holding period 
+    }
+    
+    function redeemInterest() public notFrozen{ 
+        
+        require(accounts[msg.sender].interestBalance>0,"Your interest balance value is currently 0.");
+        
+        emit NewTokensMinted(msg.sender, accounts[msg.sender].interestBalance); //tells Minexx that they must bank transfer the investor's interest to their bank account in cash
+        accounts[msg.sender].interestBalance =0 ;
+     
     }
     
      function transfer(address receiver, uint32 value) public notFrozen {
@@ -182,7 +198,5 @@ contract MNEXTok {
         InterestBalance = accounts[testbuyer].interestBalance/(10000*10000);
         Interest_Claimable = accounts[testbuyer].interestClaimable;
     }
-  
- 
  
 }
