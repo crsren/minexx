@@ -1,5 +1,5 @@
 
-**Blockchain**
+# Blockchain
 
 Blockchain is a technology that implements a specific type of database, storing data in blocks which are then chained together. The blockchain is stored on a network of peer-to-peer computers, which can often be scattered across the world. This means that a blockchain is decentralized and distributed, compared to a centralized network such as the banking payment system. A specific blockchain platform can either fall into the categories of public or private - a public blockchain maintains a distributed ledger that has its history available to view for all participants, whereas for a private one this is not the case. 
 
@@ -28,7 +28,7 @@ When creating a transaction by interacting with a smart contract, the transactio
 
 For the reasons  explained above, there is a tradeoff with the cost willing to be paid for the transaction, the complexity of the transaction and the probability that the transaction will be finalized. 
 
-**Security Tokens**
+# Security Tokens
 
 Security tokens are a type of crypto asset implemented using blockchain technology. They are a type of tokenized contract for any asset that has real-world value, such as real estate or equity as shares in a company. A particular asset can be divided into many fractions, with each security token representing a certain portion of that asset. For example, retail investors who may not have the capital to purchase a whole property, can still gain exposure to the asset through purchasing a security token issued by a certain company offering this. 
 
