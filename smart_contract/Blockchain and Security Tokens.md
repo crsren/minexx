@@ -53,7 +53,7 @@ Security tokens present a number of advantages over traditional financial vehicl
 *   The smart contract managing the balances of the individual accounts automatically updates the list of addresses holding tokens whenever a transfer is made. 
 4. **Security tokens facilitate automatic interest payments**
 *   Security tokens have the advantage that interest/dividend payments can be coded directly into the smart contract, ensuring that they happen periodically and on time.
-*   This is a huge improvement on the current system, especially in dividend payments, where payments are sometimes sent by cheques in the mail. The concept of interest payments for a security token is similar to that of dividend payments. 
+*   This is a huge improvement on the current system, especially in dividend payments, where payments are sometimes even sent by cheques in the mail. The concept of interest payments for a security token is similar to that of dividend payments. 
 *   An added benefit is that investors can transfer tokens while they still have interest being accrued on them, and that interest being accrued will seamlessly be added to the interest being accrued in the recipient’s account. This is much more difficult to do with traditional interest bearing investments.
 5. **Security tokens ensure greater compliance with laws**
 *   Highly complex laws and regulations around the world can be difficult to navigate when dealing with securities. Some types of securities allow secondary trading, some require a certain amount of time to pass before it is allowed. Others put limits on who can sell securities and how much.
