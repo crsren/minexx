@@ -111,7 +111,7 @@ The other state variables, along with their data type and brief summary of what 
 
 Within the _accounts_ mapping, each investor’s address is linked to one _wallet_ structure. The wallet structure holds a number of key pieces of data that tell the smart contract about the value of security tokens in that account, as well as aiding in the calculation and distribution of interest payments to that account. As seen in the figure on the right, the types of variables are split into numeric values, as uint256’s, and boolean variables. The decision to use uint256 for the numerical values is explained in the Design History section.
 
-<img src="smartcontractwallet.png" width="200" height="500">
+<img src="smartcontractwallet.png" width="200" height="300">
 
 The list of each of the variables along with the explanation for each one is as follows:
 
