@@ -36,7 +36,7 @@ Mappings in solidity can be seen as virtually initialized hash tables, in which 
   <tr>
    <td> accounts
    </td>
-   <td>address => wallet*
+   <td>address => wallet
    </td>
   </tr>
 </table>
