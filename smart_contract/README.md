@@ -24,7 +24,7 @@ In order to test the smart contract, use Remix Solidity in-browser compiler.
 (If you have never dealt with Solidity or Ethereum before, use the start of this tutorial to help understanding how to use the compiler: https://www.youtube.com/watch?v=ipwxYa-F1uY)
 
 In order to test the contract:
-- Deploy the contract with one account (using the Javascript VM environment)
+- Deploy the contract with one account (using the Javascript VM environment - NOTE: if you try to test the smart contract with a real Ethereum account and deploy to the Ethereum blockchain, every interaction will incur real gas costs)
 - Only that account will be able to use the mintNewTokens() function (as well as any other MinexxOnly permissioned functions)
 - Add the key for a second account to the whitelist (choose from the drop down account list at the top)
 - Then switch to that second account 
