@@ -2,11 +2,11 @@
 
 One unique aspect of the group project with Minexx was the amount of freedom we were given, both with regards to the specific problem we want to address, as well as the solution we propose. The open-ended nature of the project specification made the work more interesting, but also much more challenging. Before developing any product, we had to figure out what the product should be, and before that even, what the product should address. Also, working on topics such as web development or security tokens, both of which we knew little about beforehand, forced us to plan our goals with caution: Developing in a new environment and with a new programming language always takes more time than anticipated.
 
-With these two special requirements in mind, we decided to work according to Agile methodologies, using Design Thinking in the the ideation and conceptualization process and organizing tasks in Kanban boards throughout the development process. This document will further explain how we worked, the methodologies we used and our rationale behind them.
+With these two special requirements in mind, we decided to work according to Agile methodologies, using Design Thinking in the the ideation and conceptualization process and organizing tasks in a Kanban board throughout the development process. This document will further explain how we worked, the methodologies we used and our rationale behind them.
 
 ### Notion
 
-We organized all notes, resources and communication using [Notion.so](http://notion.so), an all-in-one productivity solution. Notion has been chosen for multiple reasons. First, it is built around a shared database, thus allowing us to share sources and notes so that everyone is on the same page with the status of the project. This database also has an integrated Kanban and Calendar view, which allowed us to schedule and track both tasks and meetings as a team instead of individually. Furthermore, Notion allows team members to remotely edit meeting notes together and has an extensive communication channel built in, allowing the group to tag and notify each other about any issues.
+We organized all notes, resources and communication using [Notion.so](http://notion.so), an all-in-one productivity solution. Notion has been chosen for multiple reasons. First, it is built around a shared database, thus allowing us to sharing sources and notes so that everyone is on the same page with the status of the project. This database also has an integrated Kanban and Calendar view, which allowed us to schedule and track both tasks and meetings as a team instead of individually. Furthermore, Notion allows team members to remotely edit meeting notes together and has an extensive communication channel built in, allowing the group to tag and notify each other about any issues.
 
 ### Agile Development
 
@@ -40,13 +40,14 @@ The search for a lightweight, iterative development framework ultimately came do
 
 Below is a picture of how we used Kanban boards for project development. We used the three standard columns "Not Started", "In Progress" and "Completed" as well as an additional "On Hold" column for features that we started developing but paused as they required more time or were found to be more complicated intended.
 
-![Kanban Board](/Users/chris/Desktop/minexx/Project Organisation/Kanban.png)
+![Kanban Board](Kanban.png)
 
-In addition, we kept separate notes for every significant meeting, allowing the team to quickly find relevant sources and notes by day. We have compiled our Notion meeting notes into this repository here [Link].
+In addition, we kept separate notes for every significant meeting, allowing the team to quickly find relevant sources and notes by day. We have compiled our Notion meeting notes into this repository [here](MeetingRecord.md).
 
-To find out more about our ideation process and decisions made along the way, continue [here].
+To find out more about our ideation process and decisions made along the way, continue with our [Design History](../report/TODO) report.
 
 ---
+**References**
 
 [1] [https://www.notion.so/blog/kanban-vs-scrum](https://www.notion.so/blog/kanban-vs-scrum)
 
