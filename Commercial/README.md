@@ -1,3 +1,3 @@
 ## Commercial 
 
-The commercial folder contains our leaflet and presentation slides alongside logos used, in the assets folder. 
+This folder contains the commercial materials of our project, our leaflet and presentation slides alongside logos used which are in the [assets](assets) folder. 
