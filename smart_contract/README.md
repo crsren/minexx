@@ -18,7 +18,7 @@ In this folder you will find the following documents:
 # Using the Smart Contract
 In order to test the smart contract, use Remix Solidity in-browser compiler.
 
-Use this tutorial to get yourself started as to how to use the compiler (if you have never used a smart contract compiler before): https://www.youtube.com/watch?v=ipwxYa-F1uY
+(If you have never dealt with Solidity or Ethereum before, use the start of this tutorial to help understanding how to use the compiler: https://www.youtube.com/watch?v=ipwxYa-F1uY)
 
 In order to test the contract:
 - Deploy the contract with one account (using the Javascript VM environment)
@@ -26,7 +26,7 @@ In order to test the contract:
 - Add the key for a second account to the whitelist (choose from the drop down account list at the top)
 - Then switch to that second account 
 - Then if you fill the 'value' field (just above deploy) with any non-zero number of Ether, then click the buyTokens function, the account will be credited with a balance of that many tokens
-- This can be checked by setting the two accounts used into the "testown" and "testbuyer" variables at the bottom of the contract code, then using the displayTestBalances function
+- This can be checked by setting the two accounts used into the "testown" and "testbuyer" variables at the bottom of the contract code before deployment, then using the displayTestBalances() function
 - Interest rate (defualt is 0) can only be set by the same account that initially deployed the contract (hence Minexx)
 
 
