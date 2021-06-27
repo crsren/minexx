@@ -46,6 +46,8 @@ In addition, we kept separate notes for every significant meeting, allowing the 
 
 To find out more about our ideation process and decisions made along the way, continue [here].
 
+---
+
 [1] [https://www.notion.so/blog/kanban-vs-scrum](https://www.notion.so/blog/kanban-vs-scrum)
 
 [2] [https://www.scrum.org/resources/what-is-scrum](https://www.scrum.org/resources/what-is-scrum)
