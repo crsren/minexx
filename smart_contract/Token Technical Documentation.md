@@ -9,9 +9,9 @@ State variables in Solidity are values that are permanently stored in smart cont
 
 **Mappings**
 
-In order to link an individual's wallet addresses with various pieces of data that are required for the operation of the security token, mappings are the primary data structure used within the smart contract. It is common practice to use mappings in Solidity when associating data with specific addresses [11]. The smart contract stores a number of mappings, relating to the investors and the regulatory bodies. 
+In order to link an individual's wallet addresses with various pieces of data that are required for the operation of the security token, mappings are the primary data structure used within the smart contract. It is common practice to use mappings in Solidity when associating data with specific addresses [1]. The smart contract stores a number of mappings, relating to the investors and the regulatory bodies. 
 
-Mappings in solidity can be seen as virtually initialized hash tables, in which every possible key (address in our case) exists, and each key is mapped to a value of 0 [12], unless stated otherwise on initialization (or later on). The defined mappings are as follows:
+Mappings in solidity can be seen as virtually initialized hash tables, in which every possible key (address in our case) exists, and each key is mapped to a value of 0 [2], unless stated otherwise on initialization (or later on). The defined mappings are as follows:
 
 
 <table>
@@ -111,6 +111,8 @@ The other state variables, along with their data type and brief summary of what 
 
 Within the _accounts_ mapping, each investor’s address is linked to one _wallet_ structure. The wallet structure holds a number of key pieces of data that tell the smart contract about the value of security tokens in that account, as well as aiding in the calculation and distribution of interest payments to that account. As seen in the figure on the right, the types of variables are split into numeric values, as uint256’s, and boolean variables. The decision to use uint256 for the numerical values is explained in the Design History section.
 
+<img src="smartcontractwallet.png" width="200" height="300">
+
 The list of each of the variables along with the explanation for each one is as follows:
 
 
@@ -186,7 +188,9 @@ The list of each of the variables along with the explanation for each one is as 
 
 As mentioned earlier, the functions that are callable by interacting with the smart contract are grouped into three sections, based upon which parties have permissions to call them. These sections are: Minexx, Investors and Regulatory Bodies. The addresses that are provided with the valid permissions to call functions in the Investors and Regulatory Bodies groups are ones that have been added by the Minexx account to _whitelistedInvestors _and _regulatoryBodies_, respectively. 
 
-There is only one address that has the permissions for the Minexx functions, and this address is conveniently named _Minexx_, as described in the Other State Variables section above. This _Minexx _variable is set when the smart contract is initially deployed to the Ethereum blockchain, and it is set to the deployer’s address in a _constructor()_ function. In Solidity, you can only define one _constructor() _function per contract and it will only be invoked once, at the time of initial deployment of the contract [13]. By recording the address that is sending the transaction that deploys the contract, we can store it in this variable, and use that for certain permissions.
+There is only one address that has the permissions for the Minexx functions, and this address is conveniently named _Minexx_, as described in the Other State Variables section above. This _Minexx _variable is set when the smart contract is initially deployed to the Ethereum blockchain, and it is set to the deployer’s address in a _constructor()_ function. In Solidity, you can only define one _constructor() _function per contract and it will only be invoked once, at the time of initial deployment of the contract [3]. By recording the address that is sending the transaction that deploys the contract, we can store it in this variable, and use that for certain permissions.
+
+<img src="smartcontract.png" width="800" height="500">
 
 **Minexx**
 
@@ -237,7 +241,7 @@ The following is a list of all the functions that are only callable if the trans
 </table>
 
 
-The _mintNewTokens() _triggers an **event** that is published whenever the function is called successfully (i.e. by the Minexx account). These events are inheritable members of the contract, which store the arguments passed in the transaction logs when emitted (hence the value of tokens minted [14]. It is possible for applications to “listen” on the blockchain for these specific events - each time the event is emitted, the application is notified about the change in state (state change being the total supply of tokens/ tokens available). This allows the applications to execute dependent logic, for example automatic reinvestment of the interest balance. 
+The _mintNewTokens() _triggers an **event** that is published whenever the function is called successfully (i.e. by the Minexx account). These events are inheritable members of the contract, which store the arguments passed in the transaction logs when emitted (hence the value of tokens minted [4]. It is possible for applications to “listen” on the blockchain for these specific events - each time the event is emitted, the application is notified about the change in state (state change being the total supply of tokens/ tokens available). This allows the applications to execute dependent logic, for example automatic reinvestment of the interest balance. 
 
 **Investors**
 
@@ -298,7 +302,7 @@ The following is a list of all the functions that are only accessible if the sen
    </td>
    <td>n/a
    </td>
-   <td>
+    <td> This function allows investors who have claimed interest into their <em>interestBalance</em> to redeem that interest for cash. This emits an event that will trigger Minexx to pay the investor what they are owed, either in cash or in a stablecoin alternative.
    </td>
   </tr>
 </table>
@@ -339,5 +343,18 @@ Similar to the table above, this table describes some permissioned functions, bu
    </td>
   </tr>
 </table>
+
+
+---
+**References**
+
+[1] [Solidity - Solidity Language Documentation](https://docs.soliditylang.org/en/v0.5.3/types.html)
+
+[2] [Medium - Mappings in Solidity](https://medium.com/upstate-interactive/mappings-in-solidity-explained-in-under-two-minutes-ecba88aff96e)
+
+[3] [GeeksforGeeks - Solidity Constructors](https://www.geeksforgeeks.org/solidity-constructors/)
+
+[4] [GeeksforGeeks - What are Events in Solidity?](https://www.geeksforgeeks.org/what-are-events-in-solidity/)
+
 
 
