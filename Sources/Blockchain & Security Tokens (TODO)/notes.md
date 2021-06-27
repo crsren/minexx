@@ -18,3 +18,10 @@
 
 **Finboot Tech website**
 + https://www.youtube.com/watch?v=HJhT-u1lPzA
+
+**Utility Tokens**
+
++ https://www.twobirds.com/en/news/articles/2019/global/ico-legal-classification-of-tokens-utility-token
+
+  
+
