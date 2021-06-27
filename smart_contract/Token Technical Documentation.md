@@ -227,7 +227,7 @@ The following is a list of all the functions that are only callable if the trans
    </td>
    <td>valueMinted
    </td>
-   <td>Allows Minexx to mint new tokens - this happens every time Minexx wants to increase the size of the fund (e.g. if the fund is of size $5million, but they have scoped out new projects and require an extra $5million to fund them, they will mint another 5 million tokens).
+   <td>Allows Minexx to mint new tokens - this happens every time Minexx wants to increase the size of the fund (e.g. if the fund is of size $5 million, but they have scoped out new projects and require an extra $5 million to fund them, they will mint another 5 million tokens).
    </td>
   </tr>
   <tr>
