@@ -1,4 +1,4 @@
-Ethical consequences report
+# Ethical consequences report
 
 There are several ethical consequences that must be considered before we go ahead with our solution. Identifying and working through these consequences is an important part of the solution process. 
 -	Previously the artisanal miners traded the minerals they collected to a buyer this was not done as directly as it would with Minexx, these buyers could be negatively affected by the arrival of Minexx, as a result of being removed from the chain. This could have a negative impact on Minexx’s image as a company aiming to fix the supply chain. To overcome this Minexx could employ these buyers as mineral quality checkers or as miners themselves. 
@@ -9,7 +9,6 @@ There are several ethical consequences that must be considered before we go ahea
 -	There is the risk of corruption, this would look bad on Minexx with their aim being to bring transparency to the supply chain. However, this is much reduced through Minexx having information on all the miners and working on the blockchain meaning all transactions can be observed.
 -	With the use of the ATIF to bring electricity to the mine sites the miners will have to be educated on electrical hazards and safety. Minexx will have to ensure that electrical equipment is satisfactorily labelled with cautions and that all miners using the equipment know how to use it safely.
 -	The ATIF will also be used for the purchase of machinery such as diggers. For the miners safety Minexx will have to ensure that they are provided with the appropriate training required to operate said machinery. 
-
 
 
 

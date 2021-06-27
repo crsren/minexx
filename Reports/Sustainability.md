@@ -1,4 +1,4 @@
-Sustainability report
+# Sustainability report
 
 As a testament to our sustainability Minexx directly impacts 10 of the 17 Sustainable Development Goals set by the UN.
 
