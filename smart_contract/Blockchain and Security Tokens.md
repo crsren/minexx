@@ -34,7 +34,7 @@ Security tokens are a type of crypto asset implemented using blockchain technolo
 
 Security tokens can be said to “tokenize” traditional financial securities. Investors in the tokens can be assured that their ownership is recorded on the blockchain ledger that the security token is issued on, rather than a custodian or intermediary holding this information privately [8]. 
 
-In our case, the security token designed will represent a traditional debt instrument. A token represents a portion of the debt loaned out by the fund, entitling the owner to interest payments collected by the Artisanal Transformational Impact Fund.
+In our case, the security token designed will represent a traditional debt instrument. A token represents a portion of the debt loaned out by the fund, entitling the owner to interest payments collected by the Artisanal Transformational Impact Fund (ATIF).
 
 The market size for security tokens is growing rapidly, and as more and more interest is drawn into the security token space, more and more investments will be made in it, putting Minexx in the perfect place for implementing their own now. The security token market capitalization grew by over 500% [9] in 2020, and is estimated to grow by much more in the coming years. This will drive more and more interest to Minexx’s security token, allowing them to quickly grow the ATIF. 
 
