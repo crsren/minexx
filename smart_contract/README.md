@@ -14,6 +14,9 @@ In this folder you will find the following documents:
 + **MNEX Demo (Compressed)**
   + This is the video demonstrating and explaining the basic functionality of the smart contract.
 
++ **smart_contract_tests.xlsx**
+  + This is a document describing the results of all tests performed on the smart contract.
+
 
 # Using the Smart Contract
 In order to test the smart contract, use Remix Solidity in-browser compiler.
