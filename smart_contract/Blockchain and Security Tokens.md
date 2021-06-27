@@ -44,18 +44,18 @@ Security tokens present a number of advantages over traditional financial vehicl
 
 
 
-1. Security tokens offer greater liquidity compared to traditional securities 
+1. **Security tokens offer greater liquidity compared to traditional securities 
 *   Frictionless transfer of the security between parties helps the market be more liquid, as this enables the removal of intermediaries that are necessary for the transfer of traditional securities.
-2. Security tokens enable more efficient and cost-effective transfers of fractional ownership in real-world assets
+2. **Security tokens enable more efficient and cost-effective transfers of fractional ownership in real-world assets
 *   Fractional interest in real-world assets require time-consuming and expensive processes, usually carried out by some intermediary like a custodian, in order to maintain correct ownership of assets and conduct valid transfers.
 *   Smart contracts, when combined with the greater liquidity in the tokens as described above, allow much more efficient and cost-effective transfer of the assets.
-3. Security tokens allow for improved investor management
+3. **Security tokens allow for improved investor management
 *   The smart contract managing the balances of the individual accounts automatically updates the list of addresses holding tokens whenever a transfer is made. 
-4. Security tokens facilitate automatic interest payments
+4. **Security tokens facilitate automatic interest payments
 *   Security tokens have the advantage that interest/dividend payments can be coded directly into the smart contract, ensuring that they happen periodically and on time.
 *   This is a huge improvement on the current system, especially in dividend payments, where payments are sometimes sent by cheques in the mail. The concept of interest payments for a security token is similar to that of dividend payments. 
 *   An added benefit is that investors can transfer tokens while they still have interest being accrued on them, and that interest being accrued will seamlessly be added to the interest being accrued in the recipient’s account. This is much more difficult to do with traditional interest bearing investments.
-5. Security tokens ensure greater compliance with laws
+5. **Security tokens ensure greater compliance with laws
 *   Highly complex laws and regulations around the world can be difficult to navigate when dealing with securities. Some types of securities allow secondary trading, some require a certain amount of time to pass before it is allowed. Others put limits on who can sell securities and how much.
 *   Regulatory compliant rules can be coded directly into the smart contract of a token, guaranteeing that the issuer won’t be flagged by regulatory bodies in the future for potential mistakes. 
 
