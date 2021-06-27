@@ -87,7 +87,7 @@ This can become complicated when dealing with public blockchains, which by natur
 
 [8] [Investopedia - Security Tokens](https://www.investopedia.com/tech/2018-year-security-token/)
 
-[9] [Forbes - Security Token Industry 2021] (https://www.forbes.com/sites/nisaamoils/2021/01/25/security-token-industry-in-2021/?sh=3189f2ec61cb) 
+[9] [Forbes - Security Token Industry 2021](https://www.forbes.com/sites/nisaamoils/2021/01/25/security-token-industry-in-2021/?sh=3189f2ec61cb) 
 
 [10] [The Block Crypto - Security Token Misconceptions and Benefits](https://www.theblockcrypto.com/post/16059/security-tokens-misconceptions-and-benefits)
 
