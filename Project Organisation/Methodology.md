@@ -2,7 +2,7 @@
 
 One unique aspect of the group project with Minexx was the amount of freedom we were given, both with regards to the specific problem we want to address, as well as the solution we propose. The open-ended nature of the project specification made the work more interesting, but also much more challenging. Before developing any product, we had to figure out what the product should be, and before that even, what the product should address. Also, working on topics such as web development or security tokens, both of which we knew little about beforehand, forced us to plan our goals with caution: Developing in a new environment and with a new programming language always takes more time than anticipated.
 
-With these two special requirements in mind, we decided to work according to Agile methodologies, using Design Thinking in the the ideation and conceptualization process and organizing tasks in a Kanban boards throughout the development process. This document will further explain how we worked, the methodologies we used and our rationale behind them.
+With these two special requirements in mind, we decided to work according to Agile methodologies, using Design Thinking in the the ideation and conceptualization process and organizing tasks in Kanban boards throughout the development process. This document will further explain how we worked, the methodologies we used and our rationale behind them.
 
 ### Notion
 
