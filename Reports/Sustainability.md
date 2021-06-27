@@ -41,3 +41,5 @@ Sustainable cities and communities is also being met by Minexx in a similar way 
 Responsible consumption and production is the final goal being met. This is one of the core aims of Minexx with their plan to bring clarity to the mineral supply chain, meaning that tech companies can confidently claim that the raw materials in their products are ethically sourced. 
 
 <img src="../docs/images/goal12.png" width="226" height="192">
+
+The software base of the project lends itself to sustainability as the website and smart contract can continuely be updated.
