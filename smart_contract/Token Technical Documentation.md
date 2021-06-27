@@ -9,9 +9,9 @@ State variables in Solidity are values that are permanently stored in smart cont
 
 **Mappings**
 
-In order to link an individual's wallet addresses with various pieces of data that are required for the operation of the security token, mappings are the primary data structure used within the smart contract. It is common practice to use mappings in Solidity when associating data with specific addresses [11]. The smart contract stores a number of mappings, relating to the investors and the regulatory bodies. 
+In order to link an individual's wallet addresses with various pieces of data that are required for the operation of the security token, mappings are the primary data structure used within the smart contract. It is common practice to use mappings in Solidity when associating data with specific addresses [1]. The smart contract stores a number of mappings, relating to the investors and the regulatory bodies. 
 
-Mappings in solidity can be seen as virtually initialized hash tables, in which every possible key (address in our case) exists, and each key is mapped to a value of 0 [12], unless stated otherwise on initialization (or later on). The defined mappings are as follows:
+Mappings in solidity can be seen as virtually initialized hash tables, in which every possible key (address in our case) exists, and each key is mapped to a value of 0 [2], unless stated otherwise on initialization (or later on). The defined mappings are as follows:
 
 
 <table>
@@ -344,4 +344,11 @@ Similar to the table above, this table describes some permissioned functions, bu
   </tr>
 </table>
 
+
+---
+**References**
+
+[1] [Solidity - Solidity Language Documentation](https://docs.soliditylang.org/en/v0.5.3/types.html)
+
+[2] [https://www.scrum.org/resources/what-is-scrum](https://www.scrum.org/resources/what-is-scrum)
 
