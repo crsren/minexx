@@ -314,7 +314,7 @@ The calculation of the interest that must be sent to the recipient was not diffi
 
 **Regulatory Bodies**
 
-Similar to the table above, this table describes some permissioned functions, but accessible only by addresses that have their mapping in _regulatoryBodies _set to true:
+Similar to the table above, this table describes some permissioned functions, but accessible only by addresses that have their mapping in _regulatoryBodies_ set to true:
 
 
 <table>
