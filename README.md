@@ -14,7 +14,7 @@ The content is structured as follows:
 
 + **Smart Contract**
   + This folder contains a video demonstration of our smart contract, its source code as well as documents on general blockchain and security tokens, technical documentation for the smart contract as well as its tests logging file.
-+ **Webpage**
++ **Webpage (docs)**
   + This folder contains all content and source code for our webpage, [minexx.codes](minexx.codes). Pushing any changes to this folder will directly update the webpage.
 + **Reports**
   + This folder contains an in-depth report of the [Design History](https://github.com/crsren/minexx/blob/main/Reports/Design%20History.pdf), discussing the entire process from ideation to development and explaining any decisions that we made along the way.
