@@ -302,7 +302,7 @@ The following is a list of all the functions that are only accessible if the sen
    </td>
    <td>n/a
    </td>
-   <td>
+    <td> This function allows investors who have claimed interest into their <em>interestBalance</em> to redeem that interest for cash. This emits an event that will trigger Minexx to pay the investor what they are owed, either in cash or in a stablecoin alternative.
    </td>
   </tr>
 </table>
