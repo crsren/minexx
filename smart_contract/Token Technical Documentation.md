@@ -188,7 +188,7 @@ The list of each of the variables along with the explanation for each one is as 
 
 As mentioned earlier, the functions that are callable by interacting with the smart contract are grouped into three sections, based upon which parties have permissions to call them. These sections are: Minexx, Investors and Regulatory Bodies. The addresses that are provided with the valid permissions to call functions in the Investors and Regulatory Bodies groups are ones that have been added by the Minexx account to _whitelistedInvestors _and _regulatoryBodies_, respectively. 
 
-There is only one address that has the permissions for the Minexx functions, and this address is conveniently named _Minexx_, as described in the Other State Variables section above. This _Minexx _variable is set when the smart contract is initially deployed to the Ethereum blockchain, and it is set to the deployer’s address in a _constructor()_ function. In Solidity, you can only define one _constructor() _function per contract and it will only be invoked once, at the time of initial deployment of the contract [13]. By recording the address that is sending the transaction that deploys the contract, we can store it in this variable, and use that for certain permissions.
+There is only one address that has the permissions for the Minexx functions, and this address is conveniently named _Minexx_, as described in the Other State Variables section above. This _Minexx _variable is set when the smart contract is initially deployed to the Ethereum blockchain, and it is set to the deployer’s address in a _constructor()_ function. In Solidity, you can only define one _constructor() _function per contract and it will only be invoked once, at the time of initial deployment of the contract [3]. By recording the address that is sending the transaction that deploys the contract, we can store it in this variable, and use that for certain permissions.
 
 <img src="smartcontract.png" width="800" height="500">
 
@@ -241,7 +241,7 @@ The following is a list of all the functions that are only callable if the trans
 </table>
 
 
-The _mintNewTokens() _triggers an **event** that is published whenever the function is called successfully (i.e. by the Minexx account). These events are inheritable members of the contract, which store the arguments passed in the transaction logs when emitted (hence the value of tokens minted [14]. It is possible for applications to “listen” on the blockchain for these specific events - each time the event is emitted, the application is notified about the change in state (state change being the total supply of tokens/ tokens available). This allows the applications to execute dependent logic, for example automatic reinvestment of the interest balance. 
+The _mintNewTokens() _triggers an **event** that is published whenever the function is called successfully (i.e. by the Minexx account). These events are inheritable members of the contract, which store the arguments passed in the transaction logs when emitted (hence the value of tokens minted [4]. It is possible for applications to “listen” on the blockchain for these specific events - each time the event is emitted, the application is notified about the change in state (state change being the total supply of tokens/ tokens available). This allows the applications to execute dependent logic, for example automatic reinvestment of the interest balance. 
 
 **Investors**
 
@@ -350,5 +350,11 @@ Similar to the table above, this table describes some permissioned functions, bu
 
 [1] [Solidity - Solidity Language Documentation](https://docs.soliditylang.org/en/v0.5.3/types.html)
 
-[2] [https://www.scrum.org/resources/what-is-scrum](https://www.scrum.org/resources/what-is-scrum)
+[2] [Medium - Mappings in Solidity](https://medium.com/upstate-interactive/mappings-in-solidity-explained-in-under-two-minutes-ecba88aff96e)
+
+[3] [GeeksforGeeks - Solidity Constructors](https://www.geeksforgeeks.org/solidity-constructors/)
+
+[4] [GeeksforGeeks - What are Events in Solidity?](https://www.geeksforgeeks.org/what-are-events-in-solidity/)
+
+
 
