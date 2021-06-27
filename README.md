@@ -13,7 +13,7 @@ This repository contains all materials, sources, specifications and rationales n
 The content is structured as follows:
 
 + **Smart Contract**
-  + This folder contains a video demonstration of our smart contract, its source code as well as documents on general blockchain and security tokens, and technical documentation for the smart contract.
+  + This folder contains a video demonstration of our smart contract, its source code as well as documents on general blockchain and security tokens, technical documentation for the smart contract as well as its tests logging file.
 + **Webpage**
   + This folder contains all content and source code for our webpage, [minexx.codes](minexx.codes). Pushing any changes to this folder will directly update the webpage.
 + **Reports**
