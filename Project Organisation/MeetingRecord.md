@@ -43,7 +43,6 @@ https://www2.deloitte.com/content/dam/Deloitte/cn/Documents/audit/deloitte-cn-au
 
 ### Links
 
-https://www.guineabmtc.com/
 https://www.trafigura.com/brochure/prepayments-demystified
 https://polymath.network/
 https://www.nasdaq.com/articles/5-best-security-token-offering-platforms-2020-08-11
