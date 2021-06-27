@@ -235,13 +235,13 @@ The following is a list of all the functions that are only callable if the trans
    </td>
    <td>interestRate
    </td>
-   <td>Allows the Minexx Investment Committee to set the monthly interest rate for investors, based on the different pieces of information described in Final Design Overview.
+   <td>Allows the Minexx Investment Committee to set the monthly interest rate for investors, based on the different pieces of information described in Final Design Overview section in Design History, within the Reports folder.
    </td>
   </tr>
 </table>
 
 
-The _mintNewTokens() _triggers an **event** that is published whenever the function is called successfully (i.e. by the Minexx account). These events are inheritable members of the contract, which store the arguments passed in the transaction logs when emitted (hence the value of tokens minted [4]. It is possible for applications to “listen” on the blockchain for these specific events - each time the event is emitted, the application is notified about the change in state (state change being the total supply of tokens/ tokens available). This allows the applications to execute dependent logic, for example automatic reinvestment of the interest balance. 
+The _mintNewTokens()_ function triggers an **event** that is published whenever the function is called successfully (i.e. by the Minexx account). These events are inheritable members of the contract, which store the arguments passed in the transaction logs when emitted (hence the value of tokens minted [4]. It is possible for applications to “listen” on the blockchain for these specific events - each time the event is emitted, the application is notified about the change in state (state change being the total supply of tokens/ tokens available). This allows the applications to execute dependent logic, for example automatic reinvestment of the interest balance, or sending money from Minexx's bank account to the investor's when they choose to redeem their interest. 
 
 **Investors**
 
