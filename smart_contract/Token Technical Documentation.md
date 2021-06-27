@@ -186,15 +186,15 @@ The list of each of the variables along with the explanation for each one is as 
 
 **Smart Contract Functions**
 
-As mentioned earlier, the functions that are callable by interacting with the smart contract are grouped into three sections, based upon which parties have permissions to call them. These sections are: Minexx, Investors and Regulatory Bodies. The addresses that are provided with the valid permissions to call functions in the Investors and Regulatory Bodies groups are ones that have been added by the Minexx account to _whitelistedInvestors _and _regulatoryBodies_, respectively. 
+As mentioned earlier, the functions that are callable by interacting with the smart contract are grouped into three sections, based upon which parties have permissions to call them. These sections are: Minexx, Investors and Regulatory Bodies. The addresses that are provided with the valid permissions to call functions in the Investors and Regulatory Bodies groups are ones that have been added by the Minexx account to _whitelistedInvestors_ and _regulatoryBodies_, respectively. 
 
-There is only one address that has the permissions for the Minexx functions, and this address is conveniently named _Minexx_, as described in the Other State Variables section above. This _Minexx _variable is set when the smart contract is initially deployed to the Ethereum blockchain, and it is set to the deployer’s address in a _constructor()_ function. In Solidity, you can only define one _constructor() _function per contract and it will only be invoked once, at the time of initial deployment of the contract [3]. By recording the address that is sending the transaction that deploys the contract, we can store it in this variable, and use that for certain permissions.
+There is only one address that has the permissions for the Minexx functions, and this address is conveniently named _Minexx_, as described in the Other State Variables section above. This _Minexx_ variable is set when the smart contract is initially deployed to the Ethereum blockchain, and it is set to the deployer’s address in a _constructor()_ function. In Solidity, you can only define one _constructor()_ function per contract and it will only be invoked once, at the time of initial deployment of the contract [3]. By recording the address that is sending the transaction that deploys the contract, we can store it in this variable, and use that for certain permissions.
 
 <img src="smartcontract.png" width="800" height="500">
 
 **Minexx**
 
-The following is a list of all the functions that are only callable if the transaction calling the functions is sent from the _Minexx_ address:
+The following is a list of all the functions that are only callable if the transaction calling the functions originates from the _Minexx_ address:
 
 
 <table>
