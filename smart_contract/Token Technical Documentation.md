@@ -101,7 +101,7 @@ The other state variables, along with their data type and brief summary of what 
    </td>
    <td>uint256
    </td>
-   <td>All time is expressed in seconds in solidity, hence this constant is stored so that it can be used to calculate if an individual is owed interest or not.
+   <td>(Not a variable, but a constant.) All time is expressed in seconds in solidity, hence this constant is stored so that it can be used to calculate if an individual is owed interest or not.
    </td>
   </tr>
 </table>
