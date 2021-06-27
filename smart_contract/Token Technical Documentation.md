@@ -42,13 +42,13 @@ Mappings in solidity can be seen as virtually initialized hash tables, in which 
 </table>
 
 
-* wallet is a structure defined in the smart contract, its details are covered in the next subsection
+* _wallet_ is a structure defined in the smart contract, its details are covered in the next subsection
 
 The whitelistedInvestors mapping refers to whether a specific address has been added to the whitelist by Minexx, after they have gone through the KYC/AML verification that has been explained in other sections of the documentation. Only whitelisted investors will have access to interact with the functions under the “Investors” group as described below, for example buying tokens and claiming interest. 
 
 The regulatoryBodies mapping refers to whether a specific address has been added to the list of approved regulatory bodies, again by Minexx. Like the whitelisted investors being provided access to the functions within the “Investors” group, addresses that have been set to true in the regulatoryBodies mapping will have access to the functions within the “Regulatory Bodies” group below.
 
-Finally, the _accounts_ mapping allows the smart contract to link each address with a number of variables that are encapsulated inside a own-defined structure called _wallet_. Details of the variables that make up the _wallet _structure will be explained below.
+Finally, the _accounts_ mapping allows the smart contract to link each address with a number of variables that are encapsulated inside a own-defined structure called _wallet_. Details of the variables that make up the _wallet_ structure will be explained below.
 
 **Other State Variables**
 
