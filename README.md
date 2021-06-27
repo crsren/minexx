@@ -24,7 +24,7 @@ The content is structured as follows:
 + **Project Organization**
   + This folder shows how we organized our project, containing our meeting records and an explanation of the project development methodology and tools we used, among others.
 + **Sources**
-  + We uploaded any sources we found useful here, organized according to 4 topics
+  + We uploaded any sources we found useful here, organized according to 4 topics:
     + Minexx
     + Artisanal and Small-Scale Mining (ASM)
     + Impact Investment funds (IIF)
