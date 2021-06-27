@@ -111,6 +111,8 @@ The other state variables, along with their data type and brief summary of what 
 
 Within the _accounts_ mapping, each investor’s address is linked to one _wallet_ structure. The wallet structure holds a number of key pieces of data that tell the smart contract about the value of security tokens in that account, as well as aiding in the calculation and distribution of interest payments to that account. As seen in the figure on the right, the types of variables are split into numeric values, as uint256’s, and boolean variables. The decision to use uint256 for the numerical values is explained in the Design History section.
 
+<img src="smartContractWallet.png" width="326" height="192">
+
 The list of each of the variables along with the explanation for each one is as follows:
 
 
@@ -187,6 +189,8 @@ The list of each of the variables along with the explanation for each one is as 
 As mentioned earlier, the functions that are callable by interacting with the smart contract are grouped into three sections, based upon which parties have permissions to call them. These sections are: Minexx, Investors and Regulatory Bodies. The addresses that are provided with the valid permissions to call functions in the Investors and Regulatory Bodies groups are ones that have been added by the Minexx account to _whitelistedInvestors _and _regulatoryBodies_, respectively. 
 
 There is only one address that has the permissions for the Minexx functions, and this address is conveniently named _Minexx_, as described in the Other State Variables section above. This _Minexx _variable is set when the smart contract is initially deployed to the Ethereum blockchain, and it is set to the deployer’s address in a _constructor()_ function. In Solidity, you can only define one _constructor() _function per contract and it will only be invoked once, at the time of initial deployment of the contract [13]. By recording the address that is sending the transaction that deploys the contract, we can store it in this variable, and use that for certain permissions.
+
+<img src="smartContract.png" width="326" height="192">
 
 **Minexx**
 
