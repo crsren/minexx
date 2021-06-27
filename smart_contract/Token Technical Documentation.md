@@ -190,7 +190,7 @@ As mentioned earlier, the functions that are callable by interacting with the sm
 
 There is only one address that has the permissions for the Minexx functions, and this address is conveniently named _Minexx_, as described in the Other State Variables section above. This _Minexx _variable is set when the smart contract is initially deployed to the Ethereum blockchain, and it is set to the deployer’s address in a _constructor()_ function. In Solidity, you can only define one _constructor() _function per contract and it will only be invoked once, at the time of initial deployment of the contract [13]. By recording the address that is sending the transaction that deploys the contract, we can store it in this variable, and use that for certain permissions.
 
-<img src="smartcontract.png" width="326" height="192">
+<img src="smartcontract.png" width="800" height="300">
 
 **Minexx**
 
