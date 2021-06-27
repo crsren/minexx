@@ -1,5 +1,18 @@
+# Smart Contract
 
+In this folder you will find the following documents:
 
++ **Blockchain and Security Tokens**
+  + This document provides information regarding what blockchain is and its use cases, what a smart contract is and how to use it, security tokens, their benefits and general requirements that one must take into consideration when designing one.
+
++ **Token Technical Documentation**
+  + Here you will find in depth documentation as to all the states, wallet variables, functions and permissions regarding the smart contract. Please read Design History in the Reports folder in order to gain understanding as to the reasoning for some specific design choices in this document.
+
++ **token_smart_contract.sol**
+  + This is the Solidity file containing the code for the smart contract.
+
++ **MNEX Demo (Compressed)**
+  + This is the video demonstrating and explaining the basic functionality of the smart contract.
 
 
 # Using the Smart Contract
