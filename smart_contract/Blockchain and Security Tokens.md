@@ -67,6 +67,7 @@ The most basic of these shared laws is linked to knowing the identity of all inv
 
 This can become complicated when dealing with public blockchains, which by nature are accessible by anyone, as their decentralized and permissionless characteristics mean anyone can set up a node on their network. If there are no specific restrictions placed within the smart contract, this means that even if an issuer goes through the correct processes to identify an address that expresses interest in purchasing their token, if it is then sent to an unverified address, they will be breaking these AML/KYC laws, and will be subject to fines and/or legal action. This means that there needs to be some method in which the token is designed in order to limit the range of investors that can access the token. 
 
+---
 
 **References**
 
