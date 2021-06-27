@@ -6,7 +6,7 @@ With these two special requirements in mind, we decided to work according to Agi
 
 ### Notion
 
-We organized all notes, resources and communication using [Notion.so](http://notion.so), an all-in-one productivity solution. Notion has been chosen for multiple reasons. First, it is built around a shared database, thus allowing to sharing sources and notes so that everyone is on the same page with the status of the project. This database also has an integrated Kanban and Calendar view, which allowed us to schedule and track both tasks and meetings as a team instead of individually. Furthermore, Notion allows team members to remotely edit meeting notes together and has an extensive communication channel built in, allowing the group to tag and notify each other about any issues.
+We organized all notes, resources and communication using [Notion.so](http://notion.so), an all-in-one productivity solution. Notion has been chosen for multiple reasons. First, it is built around a shared database, thus allowing us to share sources and notes so that everyone is on the same page with the status of the project. This database also has an integrated Kanban and Calendar view, which allowed us to schedule and track both tasks and meetings as a team instead of individually. Furthermore, Notion allows team members to remotely edit meeting notes together and has an extensive communication channel built in, allowing the group to tag and notify each other about any issues.
 
 ### Agile Development
 
