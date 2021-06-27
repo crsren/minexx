@@ -17,7 +17,7 @@ The content is structured as follows:
 + **Webpage**
   + This folder contains all content and source code for our webpage, [minexx.codes](minexx.codes). Pushing any changes to this folder will directly update the webpage.
 + **Reports**
-  + This folder contains an in-depth report of the [Design History](Reports/Design%20History.md), discussing the entire process from ideation to development and explaining any decisions that we made along the way.
+  + This folder contains an in-depth report of the [Design History](https://github.com/crsren/minexx/blob/main/Reports/Design%20History.pdf), discussing the entire process from ideation to development and explaining any decisions that we made along the way.
   + It also contains two reports discussing our thoughts on the sustainability and ethic consequences of our work.
 + **Commercial files**
   + We have made a leaflet as well as an investor pitch for our project. Aside from that, this folder contains logos and other commercial assets that will be useful in the future.
