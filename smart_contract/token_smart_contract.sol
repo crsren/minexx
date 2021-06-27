@@ -48,7 +48,7 @@ contract MNEXTok {
     
       event InterestClaimed(
         address _account,
-        uint32 _value
+        uint256 _value
     );
     
     function addToWhitelist(address newAddress) public onlyMinexx{
@@ -139,7 +139,7 @@ contract MNEXTok {
         
         require(accounts[msg.sender].interestBalance>0,"Your interest balance value is currently 0.");
         
-        emit NewTokensMinted(msg.sender, accounts[msg.sender].interestBalance); //tells Minexx that they must bank transfer the investor's interest to their bank account in cash
+        emit InterestClaimed(msg.sender, accounts[msg.sender].interestBalance); //tells Minexx that they must bank transfer the investor's interest to their bank account in cash
         accounts[msg.sender].interestBalance =0 ;
      
     }
@@ -172,6 +172,41 @@ contract MNEXTok {
         
     }
     
+    function freezeAssets(address frozenAccount) public {
+        require(whitelistedInvestors[msg.sender]==true, "Sender's address is not a regulatory body.");
+        accounts[frozenAccount].accountFrozen = true;
+    }
+    
+    function unfreeze(address frozenAccount) public {
+        require(whitelistedInvestors[msg.sender]==true, "Sender's address is not a regulatory body.");
+        accounts[frozenAccount].accountFrozen = false;
+    }
+    
+    function forceTransfer(address criminal, address receiver, uint32 value) public {
+        require(whitelistedInvestors[msg.sender]==true, "Sender's address is not a regulatory body.");
+    
+        accounts[receiver].balance += value;
+        accounts[criminal].balance -= value;
+        
+         //calculation for how much interest accrued to send along with token, if not claimed yet:
+        uint256 interestChange =  (value*accounts[criminal].interestAccrued)/ accounts[criminal].balance;
+
+        //transfer interest owed
+        accounts[receiver].interestAccrued+= interestChange;
+        accounts[criminal].interestAccrued-= interestChange;
+        
+        //update newClaimableDate with later claimable date out of receiver and sender
+        uint256 newClaimableDate;
+        if (accounts[receiver].buyTime > accounts[criminal].buyTime){
+            newClaimableDate = accounts[receiver].buyTime;
+        }
+        else{
+            newClaimableDate = accounts[criminal].buyTime;
+        }
+        accounts[receiver].buyTime = newClaimableDate;
+    
+    }
+    
     //MODIFIERS
     
     modifier onlyMinexx(){
@@ -198,5 +233,7 @@ contract MNEXTok {
         InterestBalance = accounts[testbuyer].interestBalance/(10000*10000);
         Interest_Claimable = accounts[testbuyer].interestClaimable;
     }
+  
+ 
  
 }
